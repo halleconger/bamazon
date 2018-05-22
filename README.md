@@ -10,10 +10,10 @@ If the user chooses "Display All Products For Sale," the available product names
 
 ![Display Products for Sale](images/displayproducts.png)
 
-Once they have seen what is available, they can choose the option "Purchase Your Product," which will prompt the two questions: \
+Once they have seen what is available, they can choose the option "Purchase Your Product," which will prompt the two questions: 
 
-    1) Please Enter the ID of Product You Want to Purchase \
-    2) Please Enter the Number of Units You Want to Purchase \
+    1) Please Enter the ID of Product You Want to Purchase 
+    2) Please Enter the Number of Units You Want to Purchase 
 
 The user is then shown that they are wanting to purchase a specific number of units for a certain price.
 
