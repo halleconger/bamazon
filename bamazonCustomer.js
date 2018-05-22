@@ -22,15 +22,15 @@ function start() {
             name: "action",
             message: "Welcome to Bamazon.  Please select an option:",
             choices: [
-                "Display All Items For Sale",
+                "Display All Products For Sale",
                 "Purchase Your Product",
             ],
             type: "list"
         }
     ]).then(function (response) {
         switch (response.action) {
-            case "Display All Items For Sale":
-                displayAllItems();
+            case "Display All Products For Sale":
+                displayAllProducts();
                 break;
             case "Purchase Your Product":
                 purchaseProduct();
@@ -41,7 +41,7 @@ function start() {
     });
 }
 
-function displayAllItems() {
+function displayAllProducts() {
     connection.query("SELECT * FROM products", function (err, data) {
         for (var i = 0; i < data.length; i++) {
             console.log(`ITEM ID: ${data[i].item_id} - NAME: ${data[i].product_name} - PRICE: ${data[i].price}`);
