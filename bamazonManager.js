@@ -25,7 +25,8 @@ function start() {
                 "View Products for Sale",
                 "View Low Inventory",
                 "Add to Inventory",
-                "Add New Product"
+                "Add New Product",
+                "Exit"
             ],
             type: "list"
         }
@@ -42,6 +43,8 @@ function start() {
                 break;
             case "Add New Product":
                 addNewProduct();
+            case "Exit":
+                exitBamazon();
             default:
                 break;
         }
@@ -143,5 +146,12 @@ function addNewProduct() {
             start();
         });
     });
+}
+
+function exitBamazon() {
+    connection.end();
+    console.log("---------------------------------------------------")
+    console.log("Thanks for shopping at Bamazon! Visit us again soon")
+    console.log("---------------------------------------------------")
 }
 

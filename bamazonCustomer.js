@@ -24,6 +24,7 @@ function start() {
             choices: [
                 "Display All Products For Sale",
                 "Purchase Your Product",
+                "Exit"
             ],
             type: "list"
         }
@@ -35,6 +36,8 @@ function start() {
             case "Purchase Your Product":
                 purchaseProduct();
                 break;
+            case "Exit":
+                exitBamazon();
             default:
                 break;
         }
@@ -85,4 +88,11 @@ function purchaseProduct() {
             start();
         });
     });
-};
+}
+
+function exitBamazon() {
+    connection.end();
+    console.log("---------------------------------------------------")
+    console.log("Thanks for shopping at Bamazon! Visit us again soon")
+    console.log("---------------------------------------------------")
+}
