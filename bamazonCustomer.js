@@ -78,7 +78,7 @@ function purchaseProduct() {
                     }
                 });
                 var total = data[0].price * answer.stock_quantity;
-                console.log(`Your purchase has been made! Your total coast for ${answer.stock_quantity} of ${data[0].product_name} is $${total}`)
+                console.log(`Your purchase has been made! Your total cost for ${answer.stock_quantity} of ${data[0].product_name} is $${total}`)
             } else {
                 console.log(`Sorry, your order cannot be completed. There is an insufficient stock quantity for ${data[0].product_name}. This product will be back in stock soon!`);
             }
